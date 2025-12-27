@@ -1,10 +1,118 @@
-A quick intro to Creating, storing, reading, and manipulating tables which may contain arbitrary data types.
+<!-- README.html -->
 
-Note that many of the set operations on tables (setdiff, union, etc.) automatically apply unique. This is similar to how SQL default UNION is not the same as UNION ALL.
+<h1>Introduction to MATLAB Tables</h1>
 
-Console output of the script to support learning:
+<p>
+This repository is a follow-along tutorial demonstrating how to
+<strong>create, store, read, and manipulate MATLAB tables</strong>,
+including tables containing <strong>arbitrary data types</strong>
+(e.g. vectors stored in cell arrays).
+</p>
 
-```
+<p>
+The tutorial is designed to be read and executed directly from the MATLAB
+script, with explanatory comments and printed console output supporting
+the learning process.
+</p>
+
+<hr>
+
+<h2>Related Setup Guides</h2>
+
+<p>
+This tutorial assumes a basic development environment is already in place.
+If not, see:
+</p>
+
+<ul>
+  <li>
+    <strong>Getting started with GitHub and Python:</strong>
+    <a href="https://github.com/Jaffulee/getting_started_using_github_and_python">
+      https://github.com/Jaffulee/getting_started_using_github_and_python
+    </a>
+  </li>
+</ul>
+
+<p>
+Visit my website:
+<a href="https://jaffulee.github.io/Jaffulee/">
+  https://jaffulee.github.io/Jaffulee/
+</a>
+</p>
+
+<hr>
+
+<h2>Running MATLAB in VS Code (Optional)</h2>
+
+<p>
+This tutorial can be run directly in MATLAB, but it can also be executed
+from <strong>Visual Studio Code</strong> by installing the official
+<strong>MATLAB extension</strong>.
+</p>
+
+<p>
+Using MATLAB in VS Code allows you to:
+</p>
+
+<ul>
+  <li>Edit MATLAB scripts with syntax highlighting</li>
+  <li>Run scripts using the MATLAB engine</li>
+  <li>Work alongside Git, Python, and other tools in a single editor</li>
+</ul>
+
+<p>
+To enable this:
+</p>
+
+<ol>
+  <li>Install MATLAB (licensed version required)</li>
+  <li>Install the <strong>MATLAB</strong> extension from the VS Code Extensions Marketplace</li>
+  <li>Ensure MATLAB is available on your system path</li>
+</ol>
+
+<hr>
+
+<h2>What This Tutorial Covers</h2>
+
+<ul>
+  <li>Creating tables from numeric arrays and cell arrays</li>
+  <li>Storing vectors and arbitrary data types inside table columns</li>
+  <li>Accessing table columns and individual cell contents</li>
+  <li>Combining tables using key columns</li>
+  <li>Using <code>setdiff</code> to identify new rows</li>
+  <li>Persisting tables using <code>.mat</code> files</li>
+  <li>Exporting tables to XML</li>
+</ul>
+
+<p>
+The tutorial also highlights important behaviour of MATLAB table operations,
+such as set-based functions implicitly applying uniqueness (similar to
+SQL <code>UNION</code> vs <code>UNION ALL</code>).
+</p>
+
+<hr>
+
+<h2>How to Use This Repository</h2>
+
+<ol>
+  <li>Open the MATLAB script in MATLAB or VS Code</li>
+  <li>Read through the comments inline with the code</li>
+  <li>Run the script section by section or in full</li>
+  <li>Observe the printed output in the MATLAB console</li>
+</ol>
+
+<p>
+The script is intentionally verbose and linear to support learning.
+</p>
+
+<hr>
+
+<h2>Console Output (Learning Reference)</h2>
+
+<p>
+</p>
+
+<pre><code>
 Input lists for our table:
 
 H =
@@ -313,4 +421,15 @@ T =
     "Written T to "    "tables_intro_table.xml"
 
 >>
-```
+</code></pre>
+
+<hr>
+
+<h2>Notes</h2>
+
+<ul>
+  <li>This repository is intended as a learning and reference resource.</li>
+  <li>The primary documentation lives in the MATLAB script itself.</li>
+  <li>No prior experience with MATLAB tables is assumed.</li>
+</ul>
+
